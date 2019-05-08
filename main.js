@@ -16,6 +16,8 @@ app.on('activate', () => {
   }
 })
 
+app.dock && app.dock.setIcon('icon.png')
+
 async function createWindow() {
   win = new BrowserWindow({
     webPreferences: { nodeIntegration: false, contextIsolation: true },
