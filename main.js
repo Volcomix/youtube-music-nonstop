@@ -27,9 +27,9 @@ async function createWindow() {
   })
 
   await win.loadURL('https://music.youtube.com')
-  setTimeout(() => {
-    win.webContents.executeJavaScript(`${skipVideoAds};skipVideoAds()`)
-  }, 3000)
+
+  // Wait the DOM to be populated then observe mutations
+  win.webContents.executeJavaScript(`${skipVideoAds}; setTimeout(skipVideoAds)`)
 }
 
 function skipVideoAds() {
