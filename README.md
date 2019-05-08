@@ -11,4 +11,4 @@ This application is built with the latest version of Chromium wich allows you to
 
 ## Usage
 
-- Run `yarn start` or `npm start`
+Run `yarn start` or `npm start`
