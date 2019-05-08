@@ -1,0 +1,14 @@
+{
+  "name": "youtube-music",
+  "version": "1.0.0",
+  "description": "A standalone Electron wrapping Youtube Music and removing ads",
+  "author": "Volcomix",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^6.0.0-beta.2"
+  }
+}
