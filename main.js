@@ -18,8 +18,9 @@ app.on('activate', () => {
 
 async function createWindow() {
   win = new BrowserWindow({
-    autoHideMenuBar: true,
     webPreferences: { nodeIntegration: false, contextIsolation: true },
+    autoHideMenuBar: true,
+    icon: 'icon.png',
   })
 
   win.on('closed', () => {
