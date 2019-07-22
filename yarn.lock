@@ -3,9 +3,9 @@
 
 
 "@types/node@^10.12.18":
-  version "10.14.12"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.14.12.tgz#0eec3155a46e6c4db1f27c3e588a205f767d622f"
-  integrity sha512-QcAKpaO6nhHLlxWBvpc4WeLrTvPqlHOvaj0s5GriKkA1zq+bsFBPpfYCvQhLqLgYlIko8A9YrPdaMHCo5mBcpg==
+  version "10.14.13"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.14.13.tgz#ac786d623860adf39a3f51d629480aacd6a6eec7"
+  integrity sha512-yN/FNNW1UYsRR1wwAoyOwqvDuLDtVXnaJTZ898XIw/Q5cCaeVAlVwvsmXLX5PuiScBYwZsZU4JYSHB3TvfdwvQ==
 
 ajv@^6.5.5:
   version "6.10.2"
@@ -178,9 +178,9 @@ electron-download@^4.1.0:
     sumchecker "^2.0.2"
 
 electron@^6.0.0-beta.2:
-  version "6.0.0-beta.13"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-6.0.0-beta.13.tgz#91a67f978e030c1ea5d89e84352d86923dfbfb86"
-  integrity sha512-q1pX18l4N6PH0iCoHXPmgqDNEX2slvMYZcxWXHlUFQodtvXq7bnsFfr6uvifMT5oSdfsCZtXXPK3/iK6PdODNQ==
+  version "6.0.0-beta.15"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-6.0.0-beta.15.tgz#c4825ceee46086ecdf3b12c19d660abb13f06ebe"
+  integrity sha512-msdO180UWIvvbYOnKP2pvVFMEtmMcHn3N2KjU+N+Pjqi1GzYUMHGC8JyIIIKQoT00cfKw2xwlQWjEOksTtlh8g==
   dependencies:
     "@types/node" "^10.12.18"
     electron-download "^4.1.0"
