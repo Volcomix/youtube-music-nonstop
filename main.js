@@ -31,49 +31,84 @@ async function createWindow() {
 
   await win.loadURL('https://music.youtube.com')
 
-  // Wait the DOM to be populated then observe mutations
-  win.webContents.executeJavaScript(`${skipVideoAds}; setTimeout(skipVideoAds)`)
+  // Wait the DOM to be populated before observing mutations
+  win.webContents.executeJavaScript(`
+    ${Skipper}
+    const skipper = new Skipper()
+    setTimeout(() => skipper.skipVideoAds())
+    setInterval(() => skipper.simulateHumanActivity(), 5 * 60 * 1000)
+  `)
 }
 
-function skipVideoAds() {
-  const videoPlayer = getVideoPlayer()
+class Skipper {
+  constructor() {
+    this.videoPlayerMutationObserver = new MutationObserver(mutations =>
+      this.observeVideoPlayer(mutations),
+    )
+    this.videoAdsMutationObserver = new MutationObserver(mutations =>
+      this.observeVideoAds(mutations),
+    )
+  }
 
-  const videoAdsMutationObserver = new MutationObserver(mutations => {
-    if (hasAddedNode(mutations)) {
-      const video = getVideo()
-      video.currentTime = video.duration
-      console.log('Ad skipped!')
+  skipVideoAds() {
+    this.videoPlayer = this.getVideoPlayer()
+    this.videoPlayerMutationObserver.observe(this.videoPlayer, {
+      childList: true,
+    })
+    console.log('Video player observer setup.')
+  }
+
+  simulateHumanActivity() {
+    for (let i = 0; i < 4; i++) {
+      setTimeout(() => this.moveMouse(2 ** i, 0), i * 25)
     }
-  })
+    console.log('Me there!')
+  }
 
-  const videoPlayerMutationObserver = new MutationObserver(mutations => {
+  observeVideoPlayer(mutations) {
     let videoAds
-    if (hasAddedNode(mutations) && (videoAds = getVideoAds())) {
-      videoPlayerMutationObserver.disconnect()
+    if (this.hasAddedNode(mutations) && (videoAds = this.getVideoAds())) {
+      this.videoPlayerMutationObserver.disconnect()
       console.log('Video player observer disconnected.')
-      videoAdsMutationObserver.observe(videoAds, { childList: true })
+      this.videoAdsMutationObserver.observe(videoAds, { childList: true })
       console.log('Video ads observer setup.')
     } else {
       console.log('Something has been added but not the video ads...')
     }
-  })
+  }
 
-  videoPlayerMutationObserver.observe(videoPlayer, { childList: true })
-  console.log('Video player observer setup.')
+  observeVideoAds(mutations) {
+    if (this.hasAddedNode(mutations)) {
+      const video = this.getVideo()
+      video.currentTime = video.duration
+      console.log('Ad skipped!')
+    }
+  }
 
-  function getVideoPlayer() {
+  getVideoPlayer() {
     return document.querySelector('.html5-video-player')
   }
 
-  function getVideoAds() {
-    return videoPlayer.querySelector('.video-ads')
+  getVideoAds() {
+    return this.videoPlayer.querySelector('.video-ads')
   }
 
-  function getVideo() {
+  getVideo() {
     return document.querySelector('.html5-main-video')
   }
 
-  function hasAddedNode(mutations) {
+  hasAddedNode(mutations) {
     return mutations.some(mutation => mutation.addedNodes.length)
+  }
+
+  moveMouse(x, y) {
+    const event = new MouseEvent('mousemove', {
+      view: window,
+      bubbles: true,
+      cancelable: true,
+      clientX: x,
+      clientY: y,
+    })
+    window.dispatchEvent(event)
   }
 }
