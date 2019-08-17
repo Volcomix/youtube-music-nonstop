@@ -20,16 +20,36 @@ afterAll(async () => {
   }
 })
 
-test('play a song', async () => {
+test('no interruption', async () => {
+  await playFirstSong()
+  await waitForSongStarted()
+  await simulateOldActivity()
+  await waitForToastText('Still watching? Video will pause soon')
+  await simulateHumanActivity()
+  await waitForToastText('Thanks for confirming.')
+}, 30000)
+
+async function playFirstSong() {
   await app.client.click('#play-button')
+}
+
+async function waitForSongStarted() {
   await app.client.waitForExist('#progress-bar[value="1"]')
+}
+
+async function waitForToastText(text) {
+  await app.client.waitUntilTextExists('#toast', text, 1000)
+}
+
+async function simulateOldActivity() {
   await app.client.selectorExecute('.html5-main-video', ([video]) => {
     video.currentTime = video.duration
     _lact = new Date().getTime() - 60 * 60 * 1000
   })
-  await app.client.waitForExist('#progress-bar[value="1"]')
+}
+
+async function simulateHumanActivity() {
   await app.client.execute(() => {
     skipper.simulateHumanActivity()
   })
-  await app.client.pause(1000)
-}, 30000)
+}
