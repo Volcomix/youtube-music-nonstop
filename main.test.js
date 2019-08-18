@@ -1,23 +1,27 @@
-const Application = require('spectron').Application
+const { remote } = require('webdriverio')
 const electronPath = require('electron')
 
 /**
- * @type {Application}
+ * @type {WebdriverIOAsync.BrowserObject}
  */
-let app
+let browser
 
 beforeAll(async () => {
-  app = new Application({
-    path: electronPath,
-    args: [__dirname],
+  browser = await remote({
+    port: 9515,
+    logLevel: 'warn',
+    capabilities: {
+      browserName: 'chrome',
+      'goog:chromeOptions': {
+        binary: electronPath,
+        args: [`app=${__dirname}`],
+      },
+    },
   })
-  await app.start()
 })
 
 afterAll(async () => {
-  if (app && app.isRunning()) {
-    await app.stop()
-  }
+  await browser.deleteSession()
 })
 
 test('no interruption', async () => {
@@ -30,26 +34,34 @@ test('no interruption', async () => {
 }, 30000)
 
 async function playFirstSong() {
-  await app.client.click('#play-button')
+  const button = await browser.$('#play-button')
+  await button.click()
 }
 
 async function waitForSongStarted() {
-  await app.client.waitForExist('#progress-bar[value="1"]')
+  const progressBar = await browser.$('#progress-bar[value="1"]')
+  await progressBar.waitForExist(10000)
 }
 
 async function waitForToastText(text) {
-  await app.client.waitUntilTextExists('#toast', text, 1000)
-}
-
-async function simulateOldActivity() {
-  await app.client.selectorExecute('.html5-main-video', ([video]) => {
-    video.currentTime = video.duration
-    _lact = new Date().getTime() - 60 * 60 * 1000
+  await browser.waitUntil(async () => {
+    const toast = await browser.$('#toast')
+    await toast.waitForDisplayed()
+    const message = await toast.getText()
+    return message.startsWith(text)
   })
 }
 
+async function simulateOldActivity() {
+  const video = await browser.$('.html5-main-video')
+  await browser.execute(video => {
+    video.currentTime = video.duration
+    _lact = new Date().getTime() - 60 * 60 * 1000
+  }, video)
+}
+
 async function simulateHumanActivity() {
-  await app.client.execute(() => {
+  await browser.execute(() => {
     skipper.simulateHumanActivity()
   })
 }

@@ -7,13 +7,14 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "jest"
+    "test": "jest",
+    "chromedriver": "chromedriver --url-base=wd/hub"
   },
   "devDependencies": {
     "@types/jest": "^24.0.17",
-    "@types/webdriverio": "^4.13.0",
     "electron": "^6.0.0",
+    "electron-chromedriver": "^6.0.0",
     "jest": "^24.8.0",
-    "spectron": "^8.0.0"
+    "webdriverio": "^5.12.1"
   }
 }
