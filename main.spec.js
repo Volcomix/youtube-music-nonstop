@@ -1,9 +1,7 @@
-describe('Youtube Music', () => {
-  it('should have the right title', () => {
-    expect(browser.getTitle()).toBe('YouTube Music')
-  })
+const Skipper = require('./skipper')
 
-  it('should play a song without interruption', () => {
+describe('Youtube Music', () => {
+  it('should play music without interruption', () => {
     playFirstSong()
     waitForSongPlaying()
     simulateOldActivity()
@@ -11,14 +9,23 @@ describe('Youtube Music', () => {
     simulateHumanActivity()
     waitForToast('Thanks for confirming.')
   })
+
+  it('should display an ad', () => {
+    refresh()
+    waitForSongPlaying()
+    simulateOldActivity()
+    waitForAd()
+  })
+
+  it('should pause the video', () => {
+    waitForToast('Still watching? Video will pause soon')
+    waitForDialog('Video paused. Continue watching?')
+  })
 })
 
-function playFirstSong() {
-  $('#play-button').click()
-}
-
-function waitForSongPlaying() {
-  $('#progress-bar[value="1"]').waitForExist()
+function refresh() {
+  browser.refresh()
+  browser.executeScript(`skipper = new ${Skipper}()`, [])
 }
 
 function simulateOldActivity() {
@@ -28,16 +35,32 @@ function simulateOldActivity() {
   }, $('.html5-main-video'))
 }
 
-function waitForToast(text) {
-  browser.waitUntil(() =>
-    $('#toast')
-      .getText()
-      .startsWith(text),
-  )
-}
-
 function simulateHumanActivity() {
   browser.execute(() => {
     skipper.simulateHumanActivity()
   })
+}
+
+function playFirstSong() {
+  $('#play-button').click()
+}
+
+function waitForSongPlaying() {
+  $('#progress-bar[value="1"]').waitForExist()
+}
+
+function waitForToast(text) {
+  waitForText('#toast #label', text)
+}
+
+function waitForDialog(text) {
+  waitForText('.ytmusic-popup-container .text', text)
+}
+
+function waitForAd() {
+  waitForText('.ytmusic-player-bar.subtitle', 'Video will play after ad')
+}
+
+function waitForText(selector, text) {
+  browser.waitUntil(() => $(selector).getText() === text)
 }
