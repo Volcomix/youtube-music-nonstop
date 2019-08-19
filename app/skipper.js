@@ -23,6 +23,9 @@ class Skipper {
     console.log('Me there!')
   }
 
+  /**
+   * @param {MutationRecord[]} mutations
+   */
   observeVideoPlayer(mutations) {
     let videoAds
     if (this.hasAddedNode(mutations) && (videoAds = this.getVideoAds())) {
@@ -35,6 +38,9 @@ class Skipper {
     }
   }
 
+  /**
+   * @param {MutationRecord[]} mutations
+   */
   observeVideoAds(mutations) {
     if (this.hasAddedNode(mutations)) {
       const video = this.getVideo()
@@ -51,14 +57,24 @@ class Skipper {
     return this.videoPlayer.querySelector('.video-ads')
   }
 
+  /**
+   * @returns {HTMLVideoElement}
+   */
   getVideo() {
     return document.querySelector('.html5-main-video')
   }
 
+  /**
+   * @param {MutationRecord[]} mutations
+   */
   hasAddedNode(mutations) {
     return mutations.some(mutation => mutation.addedNodes.length)
   }
 
+  /**
+   * @param {number} x
+   * @param {number} y
+   */
   moveMouse(x, y) {
     const event = new MouseEvent('mousemove', {
       view: window,

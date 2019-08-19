@@ -1,6 +1,11 @@
 const { app, BrowserWindow } = require('electron')
 const Skipper = require('./skipper')
 
+const icon = 'app/assets/icon.png'
+
+/**
+ * @type {Electron.BrowserWindow}
+ */
 let win
 
 app.on('ready', createWindow)
@@ -17,13 +22,13 @@ app.on('activate', () => {
   }
 })
 
-app.dock && app.dock.setIcon('icon.png')
+app.dock && app.dock.setIcon(icon)
 
 async function createWindow() {
   win = new BrowserWindow({
     webPreferences: { nodeIntegration: false, contextIsolation: true },
     autoHideMenuBar: true,
-    icon: 'icon.png',
+    icon,
   })
 
   win.on('closed', () => {

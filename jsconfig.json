@@ -1,3 +1,7 @@
 {
-  "include": ["*.js", "node_modules/@wdio/sync/*.d.ts"]
+  "include": [
+    "app/**/*.js",
+    "test/**/*.js",
+    "node_modules/@wdio/sync/**/*.d.ts"
+  ]
 }
