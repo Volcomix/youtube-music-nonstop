@@ -1,0 +1,3 @@
+{
+  "include": ["*.js", "node_modules/@wdio/sync/*.d.ts"]
+}
