@@ -13,14 +13,14 @@ class Skipper {
     this.videoPlayerMutationObserver.observe(this.videoPlayer, {
       childList: true,
     })
-    console.log('Video player observer setup.')
+    console.debug('Video player observer setup.')
   }
 
   simulateHumanActivity() {
     for (let i = 0; i < 4; i++) {
       setTimeout(() => this.moveMouse(2 ** i, 0), i * 25)
     }
-    console.log('Me there!')
+    console.debug('Me there!')
   }
 
   /**
@@ -30,11 +30,11 @@ class Skipper {
     let videoAds
     if (this.hasAddedNode(mutations) && (videoAds = this.getVideoAds())) {
       this.videoPlayerMutationObserver.disconnect()
-      console.log('Video player observer disconnected.')
+      console.debug('Video player observer disconnected.')
       this.videoAdsMutationObserver.observe(videoAds, { childList: true })
-      console.log('Video ads observer setup.')
+      console.debug('Video ads observer setup.')
     } else {
-      console.log('Something has been added but not the video ads...')
+      console.debug('Something has been added but not the video ads...')
     }
   }
 
@@ -45,7 +45,7 @@ class Skipper {
     if (this.hasAddedNode(mutations)) {
       const video = this.getVideo()
       video.currentTime = video.duration
-      console.log('Ad skipped!')
+      console.debug('Ad skipped!')
     }
   }
 
