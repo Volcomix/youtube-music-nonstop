@@ -7,9 +7,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-      - name: Install Yarn
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Set up node
+        uses: actions/setup-node@v1
+      - name: Install yarn
         run: npm install -g yarn
       - name: Install dependencies
         run: yarn
