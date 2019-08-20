@@ -7,7 +7,7 @@ This application is built with the latest version of Chromium wich allows you to
 ## Installation
 
 - Clone this repo.
-- Run `yarn install` or `npm install`.
+- Run `yarn` or `npm install`.
 
 ## Usage
 
