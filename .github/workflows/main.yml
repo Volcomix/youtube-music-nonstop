@@ -6,7 +6,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    container: node:10.16
+    container:
+      image: node:10.16-jessie
 
     steps:
       - name: Checkout
