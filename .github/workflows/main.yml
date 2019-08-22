@@ -13,8 +13,8 @@ jobs:
       - name: Install native packages
         run: >
           apt-get update && apt-get install -y
-            libnss3
-            xvfb
+          libnss3
+          xvfb
       - name: Configure Virtual Display Server
         run: |
           export DISPLAY=':99.0'
