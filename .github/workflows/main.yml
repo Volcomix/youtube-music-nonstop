@@ -10,6 +10,9 @@ jobs:
       image: node:10.16
 
     steps:
+      - name: Set up environment
+        run: apt-get update && apt-get install -y \
+          libnss3
       - name: Checkout
         uses: actions/checkout@v1
       - name: Install dependencies
