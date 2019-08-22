@@ -3,16 +3,14 @@ name: CI
 on: [push]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
+
+    container: node:10.16
 
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Set up node
-        uses: actions/setup-node@v1
-      - name: Install yarn
-        run: npm install -g yarn
       - name: Install dependencies
         run: yarn
       - name: Test
