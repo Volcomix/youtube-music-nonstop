@@ -11,7 +11,14 @@ jobs:
 
     steps:
       - name: Install native packages
-        run: apt-get update && apt-get install -y libnss3
+        run: >
+          apt-get update && apt-get install -y
+            libnss3
+            xvfb
+      - name: Configure Virtual Display Server
+        run: |
+          export DISPLAY=':99.0'
+          Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
       - name: Checkout
         uses: actions/checkout@v1
       - name: Install dependencies
