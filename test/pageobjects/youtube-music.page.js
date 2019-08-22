@@ -13,8 +13,8 @@ class YoutubeMusicPage extends Page {
     return $('#progress-bar[value="1"]')
   }
 
-  get playerBar() {
-    return $('.ytmusic-player-bar.subtitle')
+  get adOverlay() {
+    return $('.ytp-ad-player-overlay')
   }
 
   get toast() {
@@ -36,13 +36,6 @@ class YoutubeMusicPage extends Page {
     browser.execute(() => {
       skipper.simulateHumanActivity()
     })
-  }
-
-  /**
-   * @param {string} text
-   */
-  waitForPlayerBar(text) {
-    return this.waitForText(this.playerBar, text)
   }
 
   /**

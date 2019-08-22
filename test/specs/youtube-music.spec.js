@@ -8,13 +8,14 @@ describe('Youtube Music', () => {
     YoutubeMusicPage.waitForToast('Still watching? Video will pause soon')
     YoutubeMusicPage.simulateHumanActivity()
     YoutubeMusicPage.waitForToast('Thanks for confirming.')
+    expect(YoutubeMusicPage.adOverlay.isExisting()).toBe(false)
   })
 
   it('should display an ad', () => {
     YoutubeMusicPage.refresh()
     YoutubeMusicPage.progressBar.waitForExist()
     YoutubeMusicPage.simulateOldActivity()
-    YoutubeMusicPage.waitForPlayerBar('Video will play after ad')
+    YoutubeMusicPage.adOverlay.waitForExist()
   })
 
   it('should pause the video', () => {

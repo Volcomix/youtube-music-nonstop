@@ -13,7 +13,10 @@ jobs:
       - name: Install native packages
         run: >
           apt-get update && apt-get install -y
+          libasound2
+          libgtk-3-0
           libnss3
+          libxss1
           xvfb
       - name: Checkout
         uses: actions/checkout@v1
