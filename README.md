@@ -1,6 +1,8 @@
 # Youtube Music
 
 [![CI Status](https://github.com/volcomix/youtube-music/workflows/CI/badge.svg)](https://github.com/volcomix/youtube-music/actions)
+[![dependencies Status](https://david-dm.org/volcomix/youtube-music/status.svg)](https://david-dm.org/volcomix/youtube-music)
+[![devDependencies Status](https://david-dm.org/volcomix/youtube-music/dev-status.svg)](https://david-dm.org/volcomix/youtube-music?type=dev)
 
 A standalone Electron app wrapping Youtube Music with media keys support and skipping ads.
 
