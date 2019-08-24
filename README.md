@@ -11,8 +11,8 @@ This application is built with [Electron](https://electronjs.org/) and the lates
 
 ### Additional features:
 
-- Skip video ads by going to the end of the video when they appear.
-- Simulate human activity every 5 minutes to prevent the "Video paused. Continue watching?" confirmation.
+:no_entry_sign: Skip video ads by going to the end of the video when they appear.  
+:alarm_clock: Simulate human activity every 5 minutes to prevent the "Video paused. Continue watching?" confirmation.
 
 ## Installation
 
