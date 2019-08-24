@@ -1,7 +1,7 @@
 {
-  "name": "youtube-music",
+  "name": "youtube-music-nonstop",
   "version": "1.0.0",
-  "description": "A standalone Electron app wrapping Youtube Music with media keys support and skipping ads",
+  "description": "A cross platform desktop app wrapping YouTube Music with media keys support and preventing interruptions.",
   "author": "Volcomix",
   "license": "MIT",
   "main": "app/main.js",

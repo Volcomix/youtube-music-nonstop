@@ -1,6 +1,6 @@
 const YoutubeMusicPage = require('../pageobjects/youtube-music.page')
 
-describe('Youtube Music', () => {
+describe('YouTube Music', () => {
   it('should play music without interruption', () => {
     YoutubeMusicPage.playButton.click()
     YoutubeMusicPage.progressBar.waitForExist()
