@@ -1,5 +1,6 @@
 {
   "name": "youtube-music-nonstop",
+  "productName": "YouTube Music NonStop",
   "version": "1.0.0",
   "description": "A cross platform desktop app wrapping YouTube Music with media keys support and preventing interruptions.",
   "author": "Volcomix",
