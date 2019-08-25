@@ -1,4 +1,8 @@
-# YouTube Music NonStop
+<p align="center">
+  <img width="100" src="app/assets/icon.svg">
+</p>
+
+<h1 align="center">YouTube Music NonStop</h1>
 
 [![CI Status](https://github.com/volcomix/youtube-music-nonstop/workflows/CI/badge.svg)](https://github.com/volcomix/youtube-music-nonstop/actions)
 [![dependencies Status](https://david-dm.org/volcomix/youtube-music-nonstop/status.svg)](https://david-dm.org/volcomix/youtube-music-nonstop)
@@ -12,7 +16,8 @@ This application is built with [Electron](https://electronjs.org/) and the lates
 
 ### Additional features:
 
-:no_entry_sign: Skip video ads by going to the end of the video when they appear.  
+:no_entry_sign: Skip video ads by going to the end of the video when they appear.
+
 :wave: Simulate human activity every 5 minutes to prevent the "Video paused. Continue watching?" confirmation.
 
 ## Installation
