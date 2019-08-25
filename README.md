@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100" src="app/assets/icon.svg">
+  <a href="https://github.com/volcomix/youtube-music-nonstop"><img width="100" src="app/assets/icon.svg"></a>
 </p>
 
 <h1 align="center">YouTube Music NonStop</h1>
