@@ -16,7 +16,7 @@
 
 > A cross platform desktop app wrapping [YouTube Music](https://music.youtube.com/) with media keys support and preventing interruptions.
 
-This application is built with [Electron](https://electronjs.org/) and the latest version of Chromium wich allows you to use the media keys (play, pause, previous, next, etc.) to control playback. That means you can hit "play" or "pause" button on your keyboard, MacBook Pro Touch Bar or bluetooth headphone. :headphones:
+This application is built with [Electron](https://electronjs.org/) and the latest version of Chromium wich allows you to use the media keys (play, pause, previous, next, etc.) to control playback. That means you can hit "play" or "pause" button on your keyboard, MacBook Pro Touch Bar or bluetooth headphone.
 
 ### Additional features
 
