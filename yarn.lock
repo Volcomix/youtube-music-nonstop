@@ -91,13 +91,13 @@
     deepmerge "^4.0.0"
     glob "^7.1.2"
 
-"@wdio/jasmine-framework@^5.13.2":
-  version "5.13.2"
-  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-5.13.2.tgz#39c71c597b42af507e8d42baefdcc0c10334e599"
-  integrity sha512-m5NGRGFPN1SbjtVTC1gxHlG3Ol4rVD8f9X7y5xsNeJS8kDfLw/uN+fnsXXfdfoOHiBMLlfx6IH3fylcFpRontg==
+"@wdio/jasmine-framework@^5.14.3":
+  version "5.14.3"
+  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-5.14.3.tgz#98d4f6faea687f2c07f4decb4cccf175f859fbcc"
+  integrity sha512-8C+qUjbpmpKu6Q0gCCl1D/Ck3Pv0OtNJkoPimKLlCNP2ysF18yB2HgXRHnLLwTFUovK9j9w5NnlAaW1y9EYZng==
   dependencies:
-    "@wdio/config" "5.13.2"
     "@wdio/logger" "5.13.2"
+    "@wdio/utils" "5.14.3"
     jasmine "^3.3.0"
 
 "@wdio/local-runner@^5.14.3":
