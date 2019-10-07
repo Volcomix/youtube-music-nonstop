@@ -131,10 +131,10 @@
   dependencies:
     "@wdio/utils" "5.14.4"
 
-"@wdio/reporter@5.13.2":
-  version "5.13.2"
-  resolved "https://registry.yarnpkg.com/@wdio/reporter/-/reporter-5.13.2.tgz#df755d25ff49f86e0d7a6ddccc4b4dfa40483a73"
-  integrity sha512-oHKlsNw1vcw6k7HZvww3hhmyuDpBrlSK7mneHkqv/hg/oOnsDDxbY3RZzyquni+ZVMUHnnlQ/8YxforVMCt1aA==
+"@wdio/reporter@5.14.4":
+  version "5.14.4"
+  resolved "https://registry.yarnpkg.com/@wdio/reporter/-/reporter-5.14.4.tgz#43c50e512864ebdbb0dc0483b3727c943761ec84"
+  integrity sha512-X7HhWDIkcz5a6UpK214w/tUn7HD3ITTn73Quxnaood+q/azqfLN2HJESA0c0np6CNx4VgZFusVWCc5flJXPdog==
   dependencies:
     fs-extra "^8.0.1"
 
@@ -150,12 +150,12 @@
     gaze "^1.1.2"
     webdriverio "5.14.4"
 
-"@wdio/spec-reporter@^5.13.2":
-  version "5.13.2"
-  resolved "https://registry.yarnpkg.com/@wdio/spec-reporter/-/spec-reporter-5.13.2.tgz#9e4fe44ee0606758885a2e409775fdcd97289cd4"
-  integrity sha512-+kzFmA/PyYGPjBkmtWmCaNZexUXhmWJKb6dWIXsCJHArA44hwJoVkuYf+pa73CPTQxwD7x2pAWnP8OmSG9RhYg==
+"@wdio/spec-reporter@^5.14.4":
+  version "5.14.4"
+  resolved "https://registry.yarnpkg.com/@wdio/spec-reporter/-/spec-reporter-5.14.4.tgz#0547d27b8c2db7e6aad802de4ab796c9ba09e75f"
+  integrity sha512-eavnwOpOR74zgeUTUjCoC6UM1nc3d6wcB4ngHSBfMByv9HLUHe8UAfop3yllvT58ygFMJxYQqXGZ2QSfRFrlwQ==
   dependencies:
-    "@wdio/reporter" "5.13.2"
+    "@wdio/reporter" "5.14.4"
     chalk "^2.3.2"
     pretty-ms "^5.0.0"
     table "^5.4.2"
