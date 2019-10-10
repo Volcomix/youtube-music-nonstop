@@ -82,10 +82,10 @@
     deepmerge "^4.0.0"
     glob "^7.1.2"
 
-"@wdio/jasmine-framework@^5.14.4":
-  version "5.14.4"
-  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-5.14.4.tgz#519760b66705f7bfef31a556a470800ecfc2fd1b"
-  integrity sha512-LMz/ai9wVEnmCrE90HIMFrkYp05tkP/UfyPaOvarI162g5KI9Kx83ib/FzMDAF/Q8DO31BU88i3ey280jDxftg==
+"@wdio/jasmine-framework@^5.14.5":
+  version "5.14.5"
+  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-5.14.5.tgz#dd9e1295e2039bc203a4db37f4e066698cd00b35"
+  integrity sha512-cAdtuIsKAJ6U3gvVMrtW7rT7FJTWcNwk4e9y9hihhS9iRPCgKS+6KR3IbpEBpnWoIOhxy6WZAMxih90MYxTR/A==
   dependencies:
     "@wdio/logger" "5.13.2"
     "@wdio/utils" "5.14.4"
