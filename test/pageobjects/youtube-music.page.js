@@ -17,32 +17,29 @@ class YoutubeMusicPage extends Page {
     return $('.ytp-ad-player-overlay')
   }
 
-  get toast() {
-    return $('#toast #label')
-  }
-
   get dialog() {
     return $('.ytmusic-popup-container .text')
   }
 
-  simulateOldActivity() {
-    browser.execute(video => {
-      video.currentTime = video.duration
-      _lact = new Date().getTime() - 60 * 60 * 1000
-    }, this.video)
+  get continueWatchingButton() {
+    return $('.ytmusic-you-there-renderer #button')
+  }
+
+  simulateOldActivity(secondsBeforeEnd = 0) {
+    browser.execute(
+      (video, secondsBeforeEnd) => {
+        video.currentTime = video.duration - secondsBeforeEnd - 1
+        _lact = new Date().getTime() - 60 * 60 * 1000
+      },
+      this.video,
+      secondsBeforeEnd,
+    )
   }
 
   simulateHumanActivity() {
     browser.execute(() => {
       skipper.simulateHumanActivity()
     })
-  }
-
-  /**
-   * @param {string} text
-   */
-  waitForToast(text) {
-    return this.waitForText(this.toast, text)
   }
 
   /**
