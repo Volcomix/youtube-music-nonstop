@@ -704,10 +704,10 @@ ejs@^2.5.7:
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.7.1.tgz#5b5ab57f718b79d4aca9254457afecd36fa80228"
   integrity sha512-kS/gEPzZs3Y1rRsbGX4UOSjtP/CeJP0CxSNZHYxGfVM/VgLcv0ZqM7C45YyTj2DI2g7+P9Dd24C+IMIg6D0nYQ==
 
-electron@^7.0.0-beta.7:
-  version "7.0.0-beta.7"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-7.0.0-beta.7.tgz#eba2d4b9a5d5c3ad5d3fdc298a8a698813d61ac0"
-  integrity sha512-6hrl83U6k+X/tJelX9KOy+z15cROS9aO/eX9B7q6LMFXYjRfF4LUushPySQx32YMqLtg5nCDJBpfjtCT0nGRbw==
+electron@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-7.0.0.tgz#47a5b15ca213f32c20d85f82a1be615a74cdf55f"
+  integrity sha512-vrF1loRW1p0vQCbduqO0EZpo8ePJOuxUT6tSoUSU3lsbGK3VnlJop+0PpCIPzbe2K4G4Gk7WexH08V9se7mJcA==
   dependencies:
     "@electron/get" "^1.0.1"
     "@types/node" "^12.0.12"
