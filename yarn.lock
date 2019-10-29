@@ -50,12 +50,12 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.12.tgz#7c6c571cc2f3f3ac4a59a5f2bd48f5bdbc8653cc"
   integrity sha512-KPYGmfD0/b1eXurQ59fXD1GBzhSQfz6/lKBxkaHX9dKTzjXbK68Zt7yGUxUsCS1jeTy/8aL+d9JEr+S54mpkWQ==
 
-"@wdio/cli@^5.15.2":
-  version "5.15.2"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.15.2.tgz#3d87f605664bb3cf5130da52f581e563a37ae569"
-  integrity sha512-KaqoSE31JJ15oEhpdf0jb8u8kEFV9gGCRA35p+s1/rXomrKOam85WpBPxkv829OfGjz2Su1ry1IP7Qx4GfNgkQ==
+"@wdio/cli@^5.15.4":
+  version "5.15.4"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.15.4.tgz#33d0b5bc685487096fd26df61c63fe57ac317f43"
+  integrity sha512-tPmeGLpmmaNsskbsMtOgvrOwLNR1gFNe0WXa6maSwVk7oaswzUGI/gfdSEeNSJ5HgTCASrZ2qtEQvrf0JhnhSg==
   dependencies:
-    "@wdio/config" "5.15.1"
+    "@wdio/config" "5.15.3"
     "@wdio/logger" "5.13.2"
     "@wdio/utils" "5.15.1"
     async-exit-hook "^2.0.1"
@@ -69,18 +69,9 @@
     lodash.pickby "^4.6.0"
     lodash.union "^4.6.0"
     log-update "^3.2.0"
-    webdriverio "5.15.2"
+    webdriverio "5.15.4"
     yargs "^14.0.0"
     yarn-install "^1.0.0"
-
-"@wdio/config@5.15.1":
-  version "5.15.1"
-  resolved "https://registry.yarnpkg.com/@wdio/config/-/config-5.15.1.tgz#a010dd4a1dad4a36ee51c8557245b4bad6723198"
-  integrity sha512-8XKQCgZh0Y6jI94H1Meg71FE84PVPUAcTWZe07UhOIxNnGpADKP9KZsofMu5i8UnB32xKYXmhDJ4PJohoFItSg==
-  dependencies:
-    "@wdio/logger" "5.13.2"
-    deepmerge "^4.0.0"
-    glob "^7.1.2"
 
 "@wdio/config@5.15.3":
   version "5.15.3"
@@ -120,11 +111,6 @@
     loglevel "^1.6.0"
     loglevel-plugin-prefix "^0.8.4"
     strip-ansi "^5.2.0"
-
-"@wdio/protocols@5.15.1":
-  version "5.15.1"
-  resolved "https://registry.yarnpkg.com/@wdio/protocols/-/protocols-5.15.1.tgz#cd51dd8f5154350a09c75e452c6a5a9c645e9cea"
-  integrity sha512-zg3pdFfecDHmeNS/E2HzksJDfz7e8B71NETrymMxpfWapUC9Jzac5HXbRBpByirmGSrzzXu8923ZZNQwdl7E7g==
 
 "@wdio/protocols@5.15.4":
   version "5.15.4"
@@ -2165,18 +2151,6 @@ wdio-chromedriver-service@^5.0.2:
   dependencies:
     fs-extra "^0.30.0"
 
-webdriver@5.15.1:
-  version "5.15.1"
-  resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-5.15.1.tgz#6c17f639f777c4999d1cd0e88ce5dd6ef640467f"
-  integrity sha512-neSmJe2QVjslOa3BS2syVttKeuFbbQZ2VACtY3cMLZlMp9Y6H/mRtAa6iMrEyzbwbsXya7tyAp2EXtlckoI3nA==
-  dependencies:
-    "@wdio/config" "5.15.1"
-    "@wdio/logger" "5.13.2"
-    "@wdio/protocols" "5.15.1"
-    "@wdio/utils" "5.15.1"
-    lodash.merge "^4.6.1"
-    request "^2.83.0"
-
 webdriver@5.15.4:
   version "5.15.4"
   resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-5.15.4.tgz#271a26ee3d7efcda45565e4b79216651adc96efe"
@@ -2188,27 +2162,6 @@ webdriver@5.15.4:
     "@wdio/utils" "5.15.1"
     lodash.merge "^4.6.1"
     request "^2.83.0"
-
-webdriverio@5.15.2:
-  version "5.15.2"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.15.2.tgz#e922269bfa2e750f3b2d97a4f98c9591cbcde897"
-  integrity sha512-b+5GYQFt9dzMCsT5i8TztyxDXPQm/CQuUunPzVXqyLx4PK46aZ5MnmkzZmjewE6Wn1fXLVpkYuY0htxSOR65Ww==
-  dependencies:
-    "@wdio/config" "5.15.1"
-    "@wdio/logger" "5.13.2"
-    "@wdio/repl" "5.15.1"
-    "@wdio/utils" "5.15.1"
-    archiver "^3.0.0"
-    css-value "^0.0.1"
-    grapheme-splitter "^1.0.2"
-    lodash.clonedeep "^4.5.0"
-    lodash.isobject "^3.0.2"
-    lodash.isplainobject "^4.0.6"
-    lodash.zip "^4.2.0"
-    resq "^1.6.0"
-    rgb2hex "^0.1.0"
-    serialize-error "^5.0.0"
-    webdriver "5.15.1"
 
 webdriverio@5.15.4:
   version "5.15.4"
