@@ -58,10 +58,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.11.tgz#bec2961975888d964196bf0016a2f984d793d3ce"
   integrity sha512-O+x6uIpa6oMNTkPuHDa9MhMMehlxLAd5QcOvKRjAFsBVpeFWTOPnXbDvILvFgFFZfQ1xh1EZi1FbXxUix+zpsQ==
 
-"@wdio/cli@^5.18.0":
-  version "5.18.0"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.18.0.tgz#eae77be259896fdd2dc5803a6cdfcc1b64a8b60c"
-  integrity sha512-J9uR7+oALujet2yHk+dCWkpYNPOerNFO34ntkyvefyFKPxTB0yh+OmQXV7iJ6eHW06iYTKitIzyiuXmwkm6JaQ==
+"@wdio/cli@^5.18.1":
+  version "5.18.1"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.18.1.tgz#e4f43348e2eb3eed7e86356e4a663d436fe9ecef"
+  integrity sha512-U5UwjKk6Sbr53XjHb8BE8xZNtaEiwEk5j+JIqeqVXL2wGLst8ECZrfVOSv13mcIHtuES5QLYmtViP40YeUBR/A==
   dependencies:
     "@wdio/config" "5.18.0"
     "@wdio/logger" "5.16.10"
