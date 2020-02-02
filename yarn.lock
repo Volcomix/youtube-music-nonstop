@@ -786,10 +786,10 @@ ejs@^3.0.1:
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-3.0.1.tgz#30c8f6ee9948502cc32e85c37a3f8b39b5a614a5"
   integrity sha512-cuIMtJwxvzumSAkqaaoGY/L6Fc/t6YvoP9/VIaK0V/CyqKLEQ8sqODmYfy/cjXEdZ9+OOL8TecbJu+1RsofGDw==
 
-electron@^8.0.0-beta.4:
-  version "8.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-8.0.0-beta.4.tgz#6c4e67f92b8fc17e5c8162aa5e72dd2ef7ab2e0c"
-  integrity sha512-YEAU5nTA5istRoCRMR5kwoJkUFp4JtfufL/q2rVuVfKarx4FMAWB2V//xI2y/Y42t/VvdMZIYdtmrvlCaZwzjA==
+electron@^8.0.0-beta.9:
+  version "8.0.0-beta.9"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-8.0.0-beta.9.tgz#2ffb042398991d382656f51284839589fd1515ed"
+  integrity sha512-5aVB7ixySU5WF4p4NiGN/378idgOLSggEh80FfvKzbE5kKmegWA4m0mppkypwMWAVFzNcVubkI6vE0rerFQZKw==
   dependencies:
     "@electron/get" "^1.0.1"
     "@types/node" "^12.0.12"
