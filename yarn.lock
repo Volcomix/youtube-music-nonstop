@@ -84,10 +84,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.11.tgz#bec2961975888d964196bf0016a2f984d793d3ce"
   integrity sha512-O+x6uIpa6oMNTkPuHDa9MhMMehlxLAd5QcOvKRjAFsBVpeFWTOPnXbDvILvFgFFZfQ1xh1EZi1FbXxUix+zpsQ==
 
-"@wdio/cli@^5.19.0":
-  version "5.19.0"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.19.0.tgz#0778edda6c2fb32415dd9f36e39756e45d31a9e0"
-  integrity sha512-8ADyT+XsrvbcUG8QN/PH8tFcZg0kmv0uiOoWBBf4k78GD2dHhl/TjILAMGMbblp44sz51ClKJ2vDeBdKKPr0hQ==
+"@wdio/cli@^5.20.2":
+  version "5.20.2"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-5.20.2.tgz#59b2e09488999dacfbc4527b9383bf1950417223"
+  integrity sha512-4Y8ZMYSX5BYWQGgvb/N35+LzoDbqKPho2E0MHENPa3LfMqVJofaN2JkxGWAZMNprcVqAp0AWEziUsDiauBWThw==
   dependencies:
     "@wdio/config" "5.18.4"
     "@wdio/logger" "5.16.10"
@@ -103,7 +103,7 @@
     lodash.pickby "^4.6.0"
     lodash.union "^4.6.0"
     log-update "^3.2.0"
-    webdriverio "5.19.0"
+    webdriverio "5.20.2"
     yargs "^15.0.1"
     yarn-install "^1.0.0"
 
@@ -2497,6 +2497,27 @@ webdriverio@5.19.0:
   version "5.19.0"
   resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.19.0.tgz#8c17dbf3ca8d406f5f5f29dc9d71bc3c481a9670"
   integrity sha512-0HFKkE9RqfTGlJbZ2XyxpHDH+Seya5x9wHs8USL5PSrxxnEljcrVc6qya85o6zFlcTgGzC5WM6UDycXkfa1cLg==
+  dependencies:
+    "@wdio/config" "5.18.4"
+    "@wdio/logger" "5.16.10"
+    "@wdio/repl" "5.18.6"
+    "@wdio/utils" "5.18.6"
+    archiver "^3.0.0"
+    css-value "^0.0.1"
+    grapheme-splitter "^1.0.2"
+    lodash.clonedeep "^4.5.0"
+    lodash.isobject "^3.0.2"
+    lodash.isplainobject "^4.0.6"
+    lodash.zip "^4.2.0"
+    resq "^1.6.0"
+    rgb2hex "^0.1.0"
+    serialize-error "^5.0.0"
+    webdriver "5.19.0"
+
+webdriverio@5.20.2:
+  version "5.20.2"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-5.20.2.tgz#f87a63627ba0c45bdb5041c9e782bd3b72f9bd0d"
+  integrity sha512-MqnVQ6t8cIc2ToYq9o1G6qEgag+/OpdrmSm8qr+W/a9grmjh1LsMJi1Hg3ytM7ubgHs1FLeRO1hqYDk4xllnmQ==
   dependencies:
     "@wdio/config" "5.18.4"
     "@wdio/logger" "5.16.10"
