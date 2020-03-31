@@ -176,6 +176,16 @@
     loglevel-plugin-prefix "^0.8.4"
     strip-ansi "^6.0.0"
 
+"@wdio/logger@6.0.8":
+  version "6.0.8"
+  resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-6.0.8.tgz#05bff1c02f207588bd834ee3bc1cff01f506b486"
+  integrity sha512-Ic/xp8DkwSjAMlZFIAQFOSrRcRjqN+MrphmxOxKd25ZPWo8xM1AAUZoyIrwd71AVEC7GQXMkbqaafhwgXiy5Lw==
+  dependencies:
+    chalk "^3.0.0"
+    loglevel "^1.6.0"
+    loglevel-plugin-prefix "^0.8.4"
+    strip-ansi "^6.0.0"
+
 "@wdio/protocols@5.22.1":
   version "5.22.1"
   resolved "https://registry.yarnpkg.com/@wdio/protocols/-/protocols-5.22.1.tgz#51fde0acb57d4ddf07d078fef0ad9c91d227229d"
@@ -217,12 +227,12 @@
     easy-table "^1.1.1"
     pretty-ms "^6.0.0"
 
-"@wdio/sync@^6.0.1":
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.0.1.tgz#9a99b3b5f46af2602e57fddacab7d3eccdb78d01"
-  integrity sha512-gl0WqHqeicQQQjjfEBhIlxljgmWO6hvaSxZX3onZiCJMJ/ZZCVM7AjNljXfVjgOaVJt38D5cgltht4phuVGfAw==
+"@wdio/sync@^6.0.8":
+  version "6.0.8"
+  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.0.8.tgz#8932cf9a50671936b35afd0ed60f8a9b7309df2a"
+  integrity sha512-GeRFe0ZOxo1l14O+dSuwcS4SgCPMQv8mDKG/8Vy0pwYL01i/2jEOeETppHgcyiwsMp88cis3EndRm60otpYZxA==
   dependencies:
-    "@wdio/logger" "6.0.1"
+    "@wdio/logger" "6.0.8"
     fibers "^4.0.1"
 
 "@wdio/utils@5.18.6":
