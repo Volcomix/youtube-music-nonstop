@@ -243,13 +243,13 @@
     deepmerge "^4.0.0"
     glob "^7.1.2"
 
-"@wdio/jasmine-framework@^6.0.15":
-  version "6.0.15"
-  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-6.0.15.tgz#382a331564d2ba43031609526bf3af18f120aa34"
-  integrity sha512-ijuaHbBosN0ov9PmBtOyTMPQBHmgX4YTeJ8sMI2ultcsODtR9G2eQGKVquMO+mM1lWeCpcNR3CwPBUy+kewPfw==
+"@wdio/jasmine-framework@^6.0.16":
+  version "6.0.16"
+  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-6.0.16.tgz#a94d487c5a1c5f5f69d8f2b3e127267a938de695"
+  integrity sha512-e0DnI+c/4QyX4jrtpQSTfelfxp931MAHws8roqspM3hpWD+PW0liEskAIvMq2Htv+Em9/4VMgT+UXH6GJs+EZg==
   dependencies:
-    "@wdio/logger" "6.0.12"
-    "@wdio/utils" "6.0.13"
+    "@wdio/logger" "6.0.16"
+    "@wdio/utils" "6.0.16"
     jasmine "^3.5.0"
 
 "@wdio/local-runner@^6.0.16":
@@ -262,16 +262,6 @@
     "@wdio/runner" "6.0.16"
     async-exit-hook "^2.0.1"
     stream-buffers "^3.0.2"
-
-"@wdio/logger@6.0.12":
-  version "6.0.12"
-  resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-6.0.12.tgz#9b4430e47f4ce5edfc0cbb05279a7ac604c2b908"
-  integrity sha512-qROnV6vHsLT2CI+k9hGbO4qXjW313BZW8HodWhBMlu391lt4RLLHqZAW0na1eTG7BeazKQGP/QtBLbLycQzrFg==
-  dependencies:
-    chalk "^3.0.0"
-    loglevel "^1.6.0"
-    loglevel-plugin-prefix "^0.8.4"
-    strip-ansi "^6.0.0"
 
 "@wdio/logger@6.0.16":
   version "6.0.16"
@@ -333,14 +323,6 @@
   dependencies:
     "@wdio/logger" "6.0.16"
     fibers "^4.0.1"
-
-"@wdio/utils@6.0.13":
-  version "6.0.13"
-  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-6.0.13.tgz#5688e235c0dfcd227946e3372d48f1bc88a70530"
-  integrity sha512-S/Psta9zV2lg5jwrxZqID3NcVutn2XbZrnRhCUz0s2fzrvsuqtprvCNzxfnWufQ6MlcdQJcf4fsu+SlnUE8yZw==
-  dependencies:
-    "@wdio/logger" "6.0.12"
-    is-base64 "^1.1.0"
 
 "@wdio/utils@6.0.16":
   version "6.0.16"
@@ -1440,11 +1422,6 @@ is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
   integrity sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=
-
-is-base64@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/is-base64/-/is-base64-1.1.0.tgz#8ce1d719895030a457c59a7dcaf39b66d99d56b4"
-  integrity sha512-Nlhg7Z2dVC4/PTvIFkgVVNvPHSO2eR/Yd0XzhGiXCXEvWnptXlXa/clQ8aePPiMuxEGcWfzWbGw2Fe3d+Y3v1g==
 
 is-binary-path@~2.1.0:
   version "2.1.0"
