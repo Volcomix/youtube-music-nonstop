@@ -17,7 +17,7 @@
     "@wdio/spec-reporter": "^6.0.16",
     "@wdio/sync": "^6.0.16",
     "chromedriver": "^80.0.2",
-    "electron": "^8.2.2",
+    "electron": "^8.2.3",
     "wdio-chromedriver-service": "^6.0.2"
   }
 }
