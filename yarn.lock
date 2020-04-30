@@ -248,13 +248,14 @@
     deepmerge "^4.0.0"
     glob "^7.1.2"
 
-"@wdio/jasmine-framework@^6.1.3":
-  version "6.1.3"
-  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-6.1.3.tgz#f0cf4c20e9839e0caacf0520c0727b0e642e366d"
-  integrity sha512-TpeeDlqOaCEZDaYU1RNcuqQgb+hZgFrxt5OdDWF8lXfEtVA8lxQkT2sicibxqz/hoG3AACBuu8p7Obzi5PdrGQ==
+"@wdio/jasmine-framework@^6.1.6":
+  version "6.1.6"
+  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-6.1.6.tgz#2c12798f14664236a240b2179e8600faba3bc67e"
+  integrity sha512-pabJX7iGeA68l/tbo9BpJthh1e+UGmU8QgPAfxrci2eTFsFfSJ528nvk6zKjEEkVjk/2cu6SG7SRkXZLKj1Yjg==
   dependencies:
     "@wdio/logger" "6.0.16"
     "@wdio/utils" "6.1.0"
+    expect-webdriverio "^1.1.5"
     jasmine "^3.5.0"
 
 "@wdio/local-runner@^6.1.3":
@@ -1050,10 +1051,10 @@ escape-string-regexp@^2.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-2.0.0.tgz#a30304e99daa32e23b2fd20f51babd07cffca344"
   integrity sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==
 
-expect-webdriverio@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/expect-webdriverio/-/expect-webdriverio-1.0.0.tgz#ebcdd4f02551d5e877184cf690b69c819da9b315"
-  integrity sha512-lvhG+evyOqt9jO9tDn/ZnTrTJO6Wig8CPL4d705y/QQW2RtwL7RnLGu0yMbQCH7YTDSI8xJIjzwLrKoQxL0PMA==
+expect-webdriverio@^1.0.0, expect-webdriverio@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/expect-webdriverio/-/expect-webdriverio-1.1.5.tgz#acf834eeb2cf03d575d4f9f07fbd4b988ed37261"
+  integrity sha512-+RL4Lkne+/z+o1G5Y0S5QuEXeICxt4jExhBSM2Jn/mrDwb+PZVKPM2Yd1OzLsKeCdQLtw4Oft6514Gp5GLgdZA==
   dependencies:
     expect "^25.2.1"
     jest-matcher-utils "^25.1.0"
