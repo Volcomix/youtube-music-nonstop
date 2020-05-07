@@ -211,10 +211,10 @@
   dependencies:
     "@types/node" "*"
 
-"@wdio/cli@^6.1.8":
-  version "6.1.8"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.1.8.tgz#8c752451805e029ddd11aa46f52fdd9e2498aef5"
-  integrity sha512-C33N5ZQboqwA4LBHYtmPmn6QouchI7NL+LptsoHHGMO49msp72DGCyXUVJ//GFwuwocBqXLKpQFwq7CK/hy2Mg==
+"@wdio/cli@^6.1.9":
+  version "6.1.9"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.1.9.tgz#2836990956acf690e0918346690309caa332c8c8"
+  integrity sha512-jcu6C+ssFJNqdLNn68jjyYw1+4qtWLl9V8XMupN8bSOiWtRW44Swltme+gjkMhZDatF8mFv1dEYfRMxbPsSqzw==
   dependencies:
     "@wdio/config" "6.1.2"
     "@wdio/logger" "6.0.16"
@@ -230,7 +230,7 @@
     lodash.pickby "^4.6.0"
     lodash.union "^4.6.0"
     log-update "^4.0.0"
-    webdriverio "6.1.8"
+    webdriverio "6.1.9"
     yargs "^15.0.1"
     yarn-install "^1.0.0"
 
@@ -944,10 +944,10 @@ devtools@6.1.7:
     ua-parser-js "^0.7.21"
     uuid "^7.0.2"
 
-devtools@6.1.8:
-  version "6.1.8"
-  resolved "https://registry.yarnpkg.com/devtools/-/devtools-6.1.8.tgz#52bcd05d34af4902263e642b4a64ee8292464dec"
-  integrity sha512-bTTuJrK5R2qsXt2VMbRwF6U2ldh1YKS0NDF/4KsznP0z9pJ8tNLalncWpCVhoO3xwjxZmNELp2wy3nP63Q4CyQ==
+devtools@6.1.9:
+  version "6.1.9"
+  resolved "https://registry.yarnpkg.com/devtools/-/devtools-6.1.9.tgz#566807107d5f2f462336305714f670394473928c"
+  integrity sha512-L/swy1hth+2ltn/8Wnvd8BjZORNftINOgIRQ86NpL7ieSOz3RaOjf8T70prZwsQ6Hgk9ZW0WDuR/Rj3gMHTgsA==
   dependencies:
     "@wdio/config" "6.1.2"
     "@wdio/logger" "6.0.16"
@@ -2682,10 +2682,10 @@ webdriverio@6.1.7:
     serialize-error "^6.0.0"
     webdriver "6.1.4"
 
-webdriverio@6.1.8:
-  version "6.1.8"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.1.8.tgz#0bd2f3c48a6621a0fbbe79b1004cb9263fd46025"
-  integrity sha512-5o4v5IqfBcp6/NM1oAj4Fa3WgaMR3RD1gE3ZKvtGbk9CQy3QvSJTwUiBRYL7i1W0+agvo9RHTAJ+vF2XA9ilwg==
+webdriverio@6.1.9:
+  version "6.1.9"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.1.9.tgz#9fda9685584eb594101a742b198370e66ebecd7e"
+  integrity sha512-1ayARHlnq2uSLdLnAf5r9GNUXBMAR8Jsd0TjnQOzC5czZHy/N1S9T3lqWzMYo5Kut4MNikXHFZqTT3y0B2U1Iw==
   dependencies:
     "@wdio/config" "6.1.2"
     "@wdio/logger" "6.0.16"
@@ -2693,7 +2693,7 @@ webdriverio@6.1.8:
     "@wdio/utils" "6.1.8"
     archiver "^4.0.1"
     css-value "^0.0.1"
-    devtools "6.1.8"
+    devtools "6.1.9"
     grapheme-splitter "^1.0.2"
     lodash.clonedeep "^4.5.0"
     lodash.isobject "^3.0.2"
