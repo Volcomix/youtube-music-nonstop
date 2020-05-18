@@ -211,10 +211,10 @@
   dependencies:
     "@types/node" "*"
 
-"@wdio/cli@^6.1.11":
-  version "6.1.11"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.1.11.tgz#a819c6eb42d9397d04ca7cb30182a74dabcc0a01"
-  integrity sha512-xH/val+A2rimVgWnT7P7V7/DH7+r1bQ88a3LjM1UJIEnjVBhglx+fysjFCnRV205IhkW5lej0XLUlIJmMFdhiA==
+"@wdio/cli@^6.1.12":
+  version "6.1.12"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.1.12.tgz#80a2174962632758ff54b8fe6faf802a28e3f0a6"
+  integrity sha512-KXGTCNcoEywYqT67qyv58I/YGowinfNWlzRoD2uP/shVZn8a0ebZam8CyXl3SJtL9pfELUcaIO1Hqxwtf6BBAg==
   dependencies:
     "@wdio/config" "6.1.2"
     "@wdio/logger" "6.0.16"
@@ -230,7 +230,7 @@
     lodash.pickby "^4.6.0"
     lodash.union "^4.6.0"
     log-update "^4.0.0"
-    webdriverio "6.1.11"
+    webdriverio "6.1.12"
     yargs "^15.0.1"
     yarn-install "^1.0.0"
 
