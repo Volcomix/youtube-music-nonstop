@@ -211,10 +211,10 @@
   dependencies:
     "@types/node" "*"
 
-"@wdio/cli@^6.1.14":
-  version "6.1.14"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.1.14.tgz#00a2f6dfc83885683299c17e24fb9b34c62deaf9"
-  integrity sha512-ZXNNcgoq60NN5GODBZxE+Av1RqwTfqQfudf/6jKXrfTg6xVixx+G7PEoscRCtZTLKGedNG3Otu+pNaGPJUFB9w==
+"@wdio/cli@^6.1.15":
+  version "6.1.15"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.1.15.tgz#1717510355cf4ccbbcfda99bf92f02e315270403"
+  integrity sha512-uN4xV8kHjHxrysAY9jwfROineAQV+lgvfH723EutbdhsONjuSiJQ+bY8DzhNFCzAY9XJKtKR6MEZdZvmyjYwhg==
   dependencies:
     "@wdio/config" "6.1.14"
     "@wdio/logger" "6.0.16"
