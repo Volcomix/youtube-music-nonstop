@@ -238,10 +238,10 @@
     deepmerge "^4.0.0"
     glob "^7.1.2"
 
-"@wdio/jasmine-framework@^6.1.17":
-  version "6.1.17"
-  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-6.1.17.tgz#c86a4a0c27d82d8b392ef38d07d186c0800964ff"
-  integrity sha512-lc84e+aMfGySwA/8rhqsB7SJSZmKaSaVtF4pHV0IgR45/oc8d9wKZ4gHznahVpFCpPU9haCKFiFsymXVH/+CVg==
+"@wdio/jasmine-framework@^6.1.23":
+  version "6.1.23"
+  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-6.1.23.tgz#1c0b30ee40f0172d84bd0d833477443aed2b043c"
+  integrity sha512-4WJF9gAm1g3AtbrXDEI2jRdqzHClW/ZRezMj8bMSpwEfNf/WzRpTwrbn0etyq5dbvw3xpT2kDICZd5Ztai/GBw==
   dependencies:
     "@wdio/logger" "6.0.16"
     "@wdio/utils" "6.1.17"
