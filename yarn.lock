@@ -238,13 +238,13 @@
     deepmerge "^4.0.0"
     glob "^7.1.2"
 
-"@wdio/jasmine-framework@^6.1.17":
-  version "6.1.17"
-  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-6.1.17.tgz#c86a4a0c27d82d8b392ef38d07d186c0800964ff"
-  integrity sha512-lc84e+aMfGySwA/8rhqsB7SJSZmKaSaVtF4pHV0IgR45/oc8d9wKZ4gHznahVpFCpPU9haCKFiFsymXVH/+CVg==
+"@wdio/jasmine-framework@^6.3.0":
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/@wdio/jasmine-framework/-/jasmine-framework-6.3.0.tgz#81426f43a28a223249df18583344aeb3a54ea354"
+  integrity sha512-NH6GN5KmNyVjJAP9UsaEtVKQp5BjcNYS1wkI/woUk/7btYYrZARsvNmFJCWfO2t7Uu/GeBF1Ksjl88QflggqGA==
   dependencies:
     "@wdio/logger" "6.0.16"
-    "@wdio/utils" "6.1.17"
+    "@wdio/utils" "6.3.0"
     expect-webdriverio "^1.1.5"
     jasmine "^3.5.0"
 
@@ -323,6 +323,13 @@
   version "6.1.17"
   resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-6.1.17.tgz#99890c83dc856879c85894430e62eff56ee4d98d"
   integrity sha512-CvXzRq7JeTiMKDyK52LlWghoCOXX1x5bx6tWOIPQh3S4eTQOCAogxVjhzrfgDNV/A+dfIkfByA6n8AifNbupPQ==
+  dependencies:
+    "@wdio/logger" "6.0.16"
+
+"@wdio/utils@6.3.0":
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-6.3.0.tgz#cc2caad78407a837b9aa070f5c656a5bcb129eef"
+  integrity sha512-PbeC5fpieamgSAHf7S58MAyraGU1qKxnHdfGMG+ZIWiIo73oo4j/57CcH6ZawQ3YC1wEc/5q+VXg7N5hvqhJOQ==
   dependencies:
     "@wdio/logger" "6.0.16"
 
