@@ -175,6 +175,13 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.35.tgz#1e61b226c14380f4384f70cfe49a65c2c553ad2b"
   integrity sha512-ASYsaKecA7TUsDrqIGPNk3JeEox0z/0XR/WsJJ8BIX/9+SkMSImQXKWfU/yBrSyc7ZSE/NPqLu36Nur0miCFfQ==
 
+"@types/puppeteer@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@types/puppeteer/-/puppeteer-3.0.1.tgz#053ec20facc162b25a64785affccaa3e5817c607"
+  integrity sha512-t03eNKCvWJXhQ8wkc5C6GYuSqMEdKLOX0GLMGtks25YZr38wKZlKTwGM/BoAPVtdysX7Bb9tdwrDS1+NrW3RRA==
+  dependencies:
+    "@types/node" "*"
+
 "@types/responselike@*", "@types/responselike@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@types/responselike/-/responselike-1.0.0.tgz#251f4fe7d154d2bad125abe1b429b23afd262e29"
@@ -311,11 +318,12 @@
     easy-table "^1.1.1"
     pretty-ms "^7.0.0"
 
-"@wdio/sync@^6.2.0":
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.2.0.tgz#c1b390d552f15f47df1ff3d20bc6628da00856b4"
-  integrity sha512-b3iMiNrY0vkpyPZ81UFDX/QqH5OPzvETHUdYhj9st1/3OkAeLd07jjTEqD68RheUp6PxxXE8Gpnm8n4ywRKGhg==
+"@wdio/sync@^6.3.0":
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.3.0.tgz#abe122ab3a6c1e50735e36c927f89763806707bc"
+  integrity sha512-PhDYERXoFWsb8F0VLcNovCat/L5ly7ACywEHi9RAykWpo9T16mFZe063LkwKXPKZCvYyDRMZZoJRGPENOm1odQ==
   dependencies:
+    "@types/puppeteer" "^3.0.1"
     "@wdio/logger" "6.0.16"
     fibers "^4.0.1"
 
